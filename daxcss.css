@@ -1,0 +1,115 @@
+body {
+  background: black;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F20909;
+  border-radius: 6px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  width: auto;
+}
+
+.top-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px; /* Reduced font size for better fit on mobile */
+  font-family: sans-serif;
+  border-radius: 6px;
+  margin: 0 8px; /* Reduced spacing between links */
+  transition: 0.2s;
+}
+
+.top-a:hover {
+  background: darkred;
+}
+.top-a:active{
+  background:black;
+}
+
+.top-a i {
+  margin-right: 6px; /* Reduced spacing between icons and text */
+  font-size: 18px; /* Slightly smaller icons */
+}
+
+.fc-gaming {
+  font-size: 30px; /* Adjusted font size for mobile */
+  font-style: italic;
+  text-align: center;
+  color: #F20909;
+  animation-name: gaming;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+er {
+  color: white !important;
+}
+
+@keyframes gaming {
+  20% {
+    color: #F09108;
+  }
+  40% {
+    color: #7E0C0C;
+  }
+  60% {
+    color: #2A168C;
+  }
+  80% {
+    color: #08F0D2;
+  }
+  100% {
+    color: #F20909;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .fc-gaming {
+    font-size: 30px; /* Reduced for smaller screens */
+  }
+
+  .top-menu {
+    padding: 8px 12px; /* Reduced padding for a shorter menu */
+    width: 100%;
+  }
+
+  .top-a {
+    font-size: 12px; /* Smaller font size */
+    padding: 6px 10px; /* Reduced padding for better fit */
+    margin: 0 6px; /* Less spacing between items */
+  }
+
+  .top-a i {
+    font-size: 16px; /* Reduced icon size */
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .fc-gaming {
+    font-size: 60px;
+  }
+
+  .top-a {
+    font-size: 18px;
+    padding: 12px 24px;
+    margin: 0 15px;
+  }
+
+  .top-a i {
+    font-size: 22px;
+  }
+}
